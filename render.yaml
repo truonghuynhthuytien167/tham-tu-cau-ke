@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: tham-tu-cau-ke
+    runtime: python
+    plan: free
+    buildCommand: echo "Python standard library: no dependencies"
+    startCommand: python server.py
+    envVars:
+      - key: GAME_ADMIN_PASSWORD
+        sync: false
